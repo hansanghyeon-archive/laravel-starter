@@ -10,9 +10,9 @@ https://www.youtube.com/watch?v=lAaD-6OQSHE
 
 Thin client를 손쉽게 만들기위해서 firebase, supabase, pocketbase **realtime** 등장했다 생각한다.
 하지만 이건은 DB realtime아닌가? 우리가 원하는 것은 BE, FE의 realtime인데?
-phoenix(elixir 기반의 웹프레임워크), livewire(php 기반의 laravel 프레임워크에서 사용가능한 기능)같이 백엔드에서 구현하는 방식으로 나오고있다 생각한다.
-
-elixir도 학습하고 phoenix도 학습하였지만 phoenix는 너무 학습곡선이 높아서 laravel의 livewire로 진행해보려한다.
+phoenix(elixir 기반의 웹프레임워크), livewire(php 기반의 laravel 프레임워크에서 사용가능한 기능)같이 백엔드 realtime이 아닌가?!?! 그래서 이 두가지를 알아봤다.
+phoenix를 학습하였지만 phoenix는 너무 학습곡선이 높다.
+그래서 일단 laravel의 livewire로 진행한다.
 
 ---
 
