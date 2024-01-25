@@ -1,4 +1,4 @@
-## 개인 Laravel 개발 환경
+## 개인 Laravel 개발 환경
 
 이 저장소에는설치를 기반으로 하는 개인 기본 Laravel 개발 환경 `laravel new`와 `TypeScript` `TailwindCSS`를 설정하기 위한 Laravel Breeze가 포함되어 있습니다. 또한 몇 가지 추가 구성 및 도구가 포함되어 있습니다.
 
