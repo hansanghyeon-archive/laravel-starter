@@ -7,7 +7,7 @@
 ## Main Feature
 
 - [Laravel Framework](https://laravel.com/) (version 10.x)
-- [Laravel Breeze](https://laravel.com/docs/breeze) (providing [livewire](https://laravel-livewire.com/), [Alpine.js](https://alpinejs.dev/), [TypeScript](https://www.typescriptlang.org/), and [Tailwind CSS](https://tailwindcss.com/))
+- [Laravel Breeze](https://laravel.com/docs/10.x/starter-kits) (providing [livewire](https://laravel-livewire.com/), [Alpine.js](https://alpinejs.dev/), [TypeScript](https://www.typescriptlang.org/), and [Tailwind CSS](https://tailwindcss.com/))
 - [Laravel Sail](https://laravel.com/docs/sail) (lightweight command-line interface for running Laravel in Docker containers, with [MariaDB](https://mariadb.org/) and [Redis](https://redis.io/))
 - [Vite](https://vitejs.dev/) (next-generation frontend development and build tool)
 - Using [pnpm](https://pnpm.io/) instead of npm (faster and more efficient package manager)
