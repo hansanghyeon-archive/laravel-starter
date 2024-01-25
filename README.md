@@ -1,3 +1,21 @@
+## Why Laravel?
+
+현재 프론트엔드의 모순
+
+- HTTP만 있을때 Thick client로 발전해왔음
+- WebSocket 추가로 Thin client도 가능해짐
+- 웹개발의 90% 이상을 차지하는 비즈니스 애플리케이션은 Thin client가 훨씬 생산적임에도 Thick client로 개발되고있다.
+
+https://www.youtube.com/watch?v=lAaD-6OQSHE
+
+Thin client를 손쉽게 만들기위해서 firebase, supabase, pocketbase **realtime** 등장했다 생각한다.
+하지만 이건은 DB realtime아닌가? 우리가 원하는 것은 BE, FE의 realtime인데?
+phoenix(elixir 기반의 웹프레임워크), livewire(php 기반의 laravel 프레임워크에서 사용가능한 기능)같이 백엔드에서 구현하는 방식으로 나오고있다 생각한다.
+
+elixir도 학습하고 phoenix도 학습하였지만 phoenix는 너무 학습곡선이 높아서 laravel의 livewire로 진행해보려한다.
+
+---
+
 ## 개인 Laravel 개발 환경
 
 이 저장소에는설치를 기반으로 하는 개인 기본 Laravel 개발 환경 `laravel new`와 `TypeScript` `TailwindCSS`를 설정하기 위한 Laravel Breeze가 포함되어 있습니다. 또한 몇 가지 추가 구성 및 도구가 포함되어 있습니다.
