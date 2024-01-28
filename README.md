@@ -136,6 +136,33 @@ sail npm run dev
 
 아직 확실하게는 모르지만 `sail npm run dev`해서 실행중인 vite의 `localhost:5173`이고 실제 보여지는 뷰쪽 개발 링크가 아닌 것같다.
 
+## vscode tip
+
+### Blade + Tailwind CSS IntelliSense
+
+vscode에 Tailwind CSS IntelliSense 라는 아주 유용한 확장프로그램이있다.
+
+그런데 blade에서 이런 곳에서는 재대로 활용할 수 없다. `<div {{ $attributes->merge(['class' => 'flex bg-red-500']) }}>TEXT</div>`
+
+`./.vscode/settings.json`에 해당 설정을 추가하면된다.
+
+```json
+{
+  "tailwindCSS.experimental.classRegex": [
+    "'class' => '([^']*)", // 'class' => '...'
+    "\"class\" => \"([^\"]*)", // "class" => "..."
+    "'class' => \"([^\"]*)", // 'class' => "..."
+    "\"class\" => '([^']*)" // "class" => '...'
+  ],
+  "tailwindCSS.includeLanguages": {
+    "blade": "html"
+  }
+}
+```
+
+<img width="681" alt="image" src="https://github.com/Hansanghyeon/laravel-starter/assets/42893446/7bc81597-413c-4832-b6a9-74f037d81bd6">
+
+
 ## Breeze 익숙해지기
 
 
