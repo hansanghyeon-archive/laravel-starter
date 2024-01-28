@@ -14,8 +14,6 @@ phoenix(elixir 기반의 웹프레임워크), livewire(php 기반의 laravel 프
 phoenix를 학습하였지만 phoenix는 너무 학습곡선이 높다.
 그래서 일단 laravel의 livewire로 진행한다.
 
----
-
 ## 개인 Laravel 개발 환경
 
 이 저장소에는설치를 기반으로 하는 개인 기본 Laravel 개발 환경 `laravel new`와 `TypeScript` `TailwindCSS`를 설정하기 위한 Laravel Breeze가 포함되어 있습니다. 또한 몇 가지 추가 구성 및 도구가 포함되어 있습니다.
@@ -42,7 +40,7 @@ Breeze를 확실하게 익힌후에 Jetstream으로 넘어가는 것을 목표�
 
 필독 - https://jetstream.laravel.com/concept-overview.html
 
-## Tutorial
+## 셋업 튜토리얼
 
 _PHP, Composer가 설치되어있지 않고 docker, docker composer plugin이 설치되어있는 VM 환경에서 진행됩니다._
 
@@ -137,3 +135,7 @@ sail npm run dev
 <img src="https://github.com/Hansanghyeon/laravel-starter/assets/42893446/670c3288-0f27-4c9d-a022-b118e5b068dd" alt="image" width="518" />
 
 아직 확실하게는 모르지만 `sail npm run dev`해서 실행중인 vite의 `localhost:5173`이고 실제 보여지는 뷰쪽 개발 링크가 아닌 것같다.
+
+## Breeze 익숙해지기
+
+
