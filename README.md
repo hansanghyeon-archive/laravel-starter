@@ -134,6 +134,6 @@ sail npm install
 sail npm run dev
 ```
 
-![image](https://github.com/Hansanghyeon/laravel-starter/assets/42893446/670c3288-0f27-4c9d-a022-b118e5b068dd)
+<img src="https://github.com/Hansanghyeon/laravel-starter/assets/42893446/670c3288-0f27-4c9d-a022-b118e5b068dd" alt="image" width="518" />
 
 아직 확실하게는 모르지만 `sail npm run dev`해서 실행중인 vite의 `localhost:5173`이고 실제 보여지는 뷰쪽 개발 링크가 아닌 것같다.
