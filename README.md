@@ -23,10 +23,11 @@ phoenix를 학습하였지만 phoenix는 너무 학습곡선이 높다.
 ## Main Feature
 
 - [Laravel Framework](https://laravel.com/) (version 10.x)
-- [Laravel Breeze](https://laravel.com/docs/10.x/starter-kits) (providing [livewire](https://laravel-livewire.com/), [Alpine.js](https://alpinejs.dev/), [TypeScript](https://www.typescriptlang.org/), and [Tailwind CSS](https://tailwindcss.com/))
+- [Laravel Breeze](https://laravel.com/docs/10.x/starter-kits) (providing [livewire](https://laravel-livewire.com/), [Alpine.js](https://alpinejs.dev/), and [Tailwind CSS](https://tailwindcss.com/))
 - ⭐️ [Laravel Sail](https://laravel.com/docs/sail) (lightweight command-line interface for running Laravel in Docker containers, with [MariaDB](https://mariadb.org/) and [Redis](https://redis.io/))
-- [Vite](https://vitejs.dev/) (next-generation frontend development and build tool)
 - Using [pnpm](https://pnpm.io/) instead of npm (faster and more efficient package manager)
+- [Vite](https://vitejs.dev/) (next-generation frontend development and build tool)
+- git hook (code linting before commits), [husky](https://github.com/typicode/husky), [nano-stage](https://github.com/usmanyunusov/nano-staged)
 
 ## Next Feature
 
@@ -44,7 +45,7 @@ Breeze를 확실하게 익힌후에 Jetstream으로 넘어가는 것을 목표�
 
 _PHP, Composer가 설치되어있지 않고 docker, docker composer plugin이 설치되어있는 VM 환경에서 진행됩니다._
 
-create laravel project
+### create laravel project
 
 ```sh
 curl -s https://laravel.build/example-app | bash
@@ -56,13 +57,13 @@ sail을 재대로 사용하기 위해서 permission을 변경한다.
 chmod -R 775 example-app
 ```
 
-- [x] [Laravel Framework](https://laravel.com/) (version 10.x)
-
 프로젝트 폴더로 이동
 
 ```sh
 cd example-app
 ```
+
+### sail 설정
 
 sail로 라라벨 프로젝트 시작하기 전에 [Laravel Sail - 쉘 별칭 구성](https://laravel.com/docs/10.x/sail#configuring-a-shell-alias) 설정하기
 
@@ -89,7 +90,7 @@ source ~/.zshrc
 sail up -d
 ```
 
-Breeze 설치하기
+### Breeze 설치하기
 
 ```sh
 sail composer require laravel/breeze --dev
@@ -100,6 +101,8 @@ sail artisan breeze:install
 ```
 
 <img src="https://github.com/Hansanghyeon/laravel-starter/assets/42893446/5bc23897-9368-4108-b180-b56c68b62c64" alt="image" width="518" />
+
+### NODE, pnpm 설정하기
 
 [Node 버전 변경하기](https://laravel.com/docs/9.x/sail#sail-node-versions)
 
@@ -125,16 +128,45 @@ sail build --no-cache
 sail up -d
 ```
 
+sail에 npm, yarn, pnpm 모두 설정되어있다.
+
+```sh
+sail node -v
+sail yarn -v
+sail pnpm -v
+```
+
 npm 패키지 설치, 실행
 
 ```sh
-sail npm install
-sail npm run dev
+sail pnpm install
+sail pnpm run dev
 ```
 
 <img src="https://github.com/Hansanghyeon/laravel-starter/assets/42893446/670c3288-0f27-4c9d-a022-b118e5b068dd" alt="image" width="518" />
 
 아직 확실하게는 모르지만 `sail npm run dev`해서 실행중인 vite의 `localhost:5173`이고 실제 보여지는 뷰쪽 개발 링크가 아닌 것같다.
+
+### Git hook 설정하기
+
+```sh
+sail pnpm add --save-dev husky
+```
+
+sail을 사용하지말고 로컬에서 구성하자.
+
+```sh
+pnpm exec husky init
+```
+
+```sh
+git commit -m "Keep calm and commit"
+# test script will run every time you commit
+```
+
+![image](https://github.com/Hansanghyeon/laravel-starter/assets/42893446/f5ab242b-0666-45b4-a214-c7f93f273c63)
+
+재대로 동작한다.
 
 ## vscode tip
 
@@ -165,4 +197,5 @@ vscode에 Tailwind CSS IntelliSense 라는 아주 유용한 확장프로그램�
 
 ## Breeze 익숙해지기
 
-
+- [x] https://github.com/Hansanghyeon/laravel-guest-book
+- [ ] https://youtu.be/MFh0Fd7BsjE?si=l0Z2nr-CpIQ9hho6
