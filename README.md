@@ -197,5 +197,6 @@ vscode에 Tailwind CSS IntelliSense 라는 아주 유용한 확장프로그램�
 
 ## Breeze 익숙해지기
 
-- [x] https://github.com/Hansanghyeon/laravel-guest-book
+- [x] https://github.com/Hansanghyeon/laravel-guest-book (blade, livewire)
+- [ ] https://github.com/Hansanghyeon/laravel-wms (React, inertia)
 - [ ] https://youtu.be/MFh0Fd7BsjE?si=l0Z2nr-CpIQ9hho6
