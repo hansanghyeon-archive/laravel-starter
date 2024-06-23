@@ -43,7 +43,7 @@ Breeze를 확실하게 익힌후에 Jetstream으로 넘어가는 것을 목표�
 
 ## 셋업 튜토리얼
 
-_PHP, Composer가 설치되어있지 않고 docker, docker composer plugin이 설치되어있는 VM 환경에서 진행됩니다._
+_PHP, Composer가 설치되어있지 않은 VM 환경에서 진행됩니다._
 
 ### create laravel project
 
@@ -61,6 +61,12 @@ chmod -R 775 example-app
 
 ```sh
 cd example-app
+```
+
+docker-compose에서 volume을 마운트하는 방식으로 변경합니다.
+
+```
+access denied for user 'sail'@'%' to database 'laravel'
 ```
 
 ### sail 설정
@@ -88,6 +94,10 @@ source ~/.zshrc
 
 ```sh
 sail up -d
+```
+
+```sh
+sail artisan migrate
 ```
 
 ### Breeze 설치하기
